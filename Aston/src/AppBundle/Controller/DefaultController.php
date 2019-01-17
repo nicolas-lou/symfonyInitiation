@@ -19,12 +19,7 @@ class DefaultController extends Controller
         ]);
     }
 
-    /**
-     * @Route("/aston", name="aston")
-     */
-    public function astonAction(){
-        return $this->render("default/aston.html.twig");
-    }
+
 
     /**
      * @Route("/sqli", name="sqli")
