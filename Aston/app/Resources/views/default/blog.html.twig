@@ -1,14 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Aston{% endblock %}
+{% block title %}Blog{% endblock %}
 
 {% block body %}
     <div id="wrapper">
         <div id="container">
             <div id="welcome">
-                <h1><span>Bienvenu chez {{ prenom }}</span></h1>
-            </div>
-            <a href={{ path('blog', {'page': 4, "id":3 }) }}><button type="button" class="btn btn-primary">Aller au blog, page 4 id 3</button></a>
+                <h1><span>Page blog</span></h1>            </div>
+
         </div>
     </div>
 {% endblock %}

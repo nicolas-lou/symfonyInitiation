@@ -21,17 +21,4 @@ class DefaultController extends Controller
 
 
 
-    /**
-     * @Route("/sqli", name="sqli")
-     */
-    public function sqliAction(){
-        return $this->render("default/sqli.html.twig");
-    }
-
-    /**
-     * @Route("/contact", name="contact")
-     */
-    public function contactAction(){
-        return $this->render("default/contact.html.twig");
-    }
 }
