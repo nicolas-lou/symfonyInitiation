@@ -18,4 +18,25 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+
+    /**
+     * @Route("/aston", name="aston")
+     */
+    public function astonAction(){
+        return $this->render("default/aston.html.twig");
+    }
+
+    /**
+     * @Route("/sqli", name="sqli")
+     */
+    public function sqliAction(){
+        return $this->render("default/sqli.html.twig");
+    }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contactAction(){
+        return $this->render("default/contact.html.twig");
+    }
 }
